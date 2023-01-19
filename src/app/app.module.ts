@@ -1,13 +1,19 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CategoriesComponent} from './components/categories/categories.component';
+import {TasksComponent} from './components/tasks/tasks.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CategoriesComponent,
+    TasksComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -17,4 +23,5 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
